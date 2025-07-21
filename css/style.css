@@ -19,7 +19,7 @@
     justify-content: space-between;
 }
 .container {
-    margin: 0px auto;
+    margin-inline: auto;
 }
 .font-poppins {
     font-family: "Poppins", sans-serif;

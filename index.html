@@ -13,8 +13,8 @@
   </head>
   <body class="font-poppins">
     <header class="relative">
-        <div class="container">
-            <nav class="flex-between py-10 mx-5">
+        <nav class="container fixed top-0 left-[50%] transform -translate-x-[50%] bg-white md:shadow-sm">
+            <div class="flex-between py-5 mx-5">
                 <div id="menu" class="md:hidden">
                     <i class="fa-solid fa-bars text-2xl md:text-4xl"></i>
                 </div>
@@ -22,7 +22,7 @@
                     <h1 class="font-bold text-lg md:text-3xl">Influencer products</h1>
                 </div>
 
-                <div id="mobile-menu" class="absolute -left-[300px] top-0 h-screen w-[300px] md:hidden  text-white bg-[#09090B] py-5 px-5  gap-1  border-r border-gray-300 transition-all duration-300">
+                <div id="mobile-menu" class="absolute -left-[300px] top-0 h-screen w-[300px] md:hidden  text-white bg-[#09090B] py-5 px-5  gap-1  border-r border-gray-300 transition-all duration-300 z-50">
                     <div class="relative">
                         <div id="menu-close" class="absolute -top-10 right-0 text-xl p-3 size-12 flex-center rounded-full hover:bg-gray-900 transition cursor-pointer">
                             <i class="fa-solid fa-xmark"></i>
@@ -52,9 +52,35 @@
                     </ul>
                     <button><i class="fa-solid fa-cart-shopping text-2xl"></i></button>
                 </div>  
-            </nav>
+            </div>
+        </nav>
+        <div id="hero" class="container mt-44">
+            <div class="mx-5 flex-between flex-col-reverse md:flex-row md:h-fit">
+                <div class="w-full md:w-6/10 text-center md:text-left">
+                    <h1 class="text-3xl font-bold mt-4 mb-2 text-[#3A3A3A] md:text-7xl md:leading-22">Start your Journey as Influencer</h1>
+                    <p class="font-medium text-[#3a3a3a] mt-8 mb-6 md:max-w-8/10 text-center md:text-left leading-6">Lorem ipsum dolor sit amet, consectetur adipicing elit. Sem vastibulum sed scelerisque eros. Lectus faucilbus.  Sem vastibulum sed scelerisque</p>
+                    <button class="py-3 px-6 bg-[#E02C6D] text-white rounded-3xl">Preebook now <i class="fa-solid fa-arrow-right ml-1.5"></i></button>
+                </div>
+                <div class="flex-center relative">
+                    <img class="w-4/5 md:w-full" src="./images/Circle design.svg" alt="">
+                    <img class="absolute w-4/5 md:w-full" src="./images/main-camera.png" alt="">
+                </div>
+            </div>
         </div>
     </header>
+
+    <section id="sponsor" class="container mt-[70px] mb-[100px]">
+        <div class="flex-center flex-wrap gap-[60px] shadow-md py-7">
+            <img src="./logos/Alibaba.svg" alt="">
+            <img src="./logos/Amazon.svg" alt="">
+            <img src="./logos/Daraz.pk Logo.svg" alt="">
+            <img src="./logos/Ebay.svg" alt="">
+            <img src="./logos/Rakuten.svg" alt="">
+            <img src="./logos/Target.svg" alt="">
+            <img src="./logos/Target.svg" alt="">
+            <img class="hidden md:inline" src="./logos/Walmart.svg" alt="">
+        </div>
+    </section>
 
     <script src="./main.js"></script>
   </body>
