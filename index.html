@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Influencer Gear</title>
+    <!-- CSS LINK -->
+     <link rel="stylesheet" href="css/style.css">
+    <!-- Tailwind Css Link -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Font Awesome Icon -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+  </head>
+  <body class="font-poppins">
+    <header class="relative">
+        <div class="container">
+            <nav class="flex-between py-10 mx-5">
+                <div id="menu" class="md:hidden">
+                    <i class="fa-solid fa-bars text-2xl md:text-4xl"></i>
+                </div>
+                <div class="flex-1 text-center md:text-left">
+                    <h1 class="font-bold text-lg md:text-3xl">Influencer products</h1>
+                </div>
+
+                <div id="mobile-menu" class="absolute -left-[300px] top-0 h-screen w-[300px] md:hidden  text-white bg-[#09090B] py-5 px-5  gap-1  border-r border-gray-300 transition-all duration-300">
+                    <div class="relative">
+                        <div id="menu-close" class="absolute -top-10 right-0 text-xl p-3 size-12 flex-center rounded-full hover:bg-gray-900 transition cursor-pointer">
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+                        <h1 class="text-lg mt-10">Influencer Products</h1>
+                        <ul class="border-b border-gray-600 pb-5">
+                            <li class="py-3 px-2 flex items-center gap-3 rounded-lg hover:bg-gray-900 cursor-pointer"><i class="fa-solid fa-user-graduate"></i>Workshop</li>
+                            <li class="py-3 px-2 flex items-center gap-3 rounded-lg hover:bg-gray-900 cursor-pointer"><i class="fa-solid fa-book-open-reader"></i>Browse library</li>
+                        </ul>
+                        <div class="flex flex-col md:hidden mt-6">
+                            <h1 class="text-lg">Welcome to Stack Learner</h1>
+                            <p class="text-gray-300 mt-3 text-sm">Sign in to access your personalized learning</p>
+                            <div class="mt-6">
+                                <button class="bg-gray-800 text-sm w-full font-medium py-2.5 rounded-md hover:bg-gray-800 cursor-pointer">Regular</button>
+                                <button class="bg-gray-100 text-sm text-gray-950 w-full font-medium py-2.5 rounded-md hover:bg-gray-200 mt-4 cursor-pointer">Login</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+                <div id="desktop-menu" class="flex items-center gap-3">
+                    <ul class="hidden md:flex">
+                        <li class="py-3 px-6">Home</li>
+                        <li class="py-3 px-6">Products</li>
+                        <li class="py-3 px-6">Sign up</li>
+                        <li class="py-3 px-6">Log in</li>
+                        <li class="py-3 p-6"><i class="fa-solid fa-search"></i></li>
+                    </ul>
+                    <button><i class="fa-solid fa-cart-shopping text-2xl"></i></button>
+                </div>  
+            </nav>
+        </div>
+    </header>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
